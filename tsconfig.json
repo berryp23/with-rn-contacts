@@ -8,6 +8,6 @@
     "declaration": false,
     "declarationMap": false
   },
-  "include": ["./"],
+  "include": ["./src/**/*.ts"],
   "exclude": ["**/__mocks__/*", "**/__tests__/*"]
 }
