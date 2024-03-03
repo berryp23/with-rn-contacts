@@ -19,4 +19,3 @@ const setBuildScript = (buildGradle) => {
     return newBuildGradle;
 };
 exports.default = withUpdateAppBuildGradle;
-//# sourceMappingURL=withUpdateAppBuildGradle.js.map

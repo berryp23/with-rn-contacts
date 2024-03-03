@@ -15,4 +15,3 @@ const withRNContacts = (config) => {
     ]);
 };
 exports.default = withRNContacts;
-//# sourceMappingURL=index.js.map
