@@ -4,8 +4,10 @@
     "rootDir": "./",
     "outDir": "./build",
     "moduleResolution": "node",
-    "module": "commonjs"
+    "module": "commonjs",
+    "declaration": false,
+    "declarationMap": false
   },
   "include": ["./"],
-  "exclude": ["**/__mocks__/*", "**/__tests__/*", "build", "node_modules"]
+  "exclude": ["**/__mocks__/*", "**/__tests__/*"]
 }
