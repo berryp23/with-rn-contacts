@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const config_plugins_1 = require("@expo/config-plugins");
+import { withAppBuildGradle } from '@expo/config-plugins';
 const withUpdateAppBuildGradle = (config) => {
-    return (0, config_plugins_1.withAppBuildGradle)(config, (config) => {
+    return withAppBuildGradle(config, (config) => {
         if (config.modResults.language === 'groovy') {
             config.modResults.contents = setBuildScript(config.modResults.contents);
         }
@@ -18,5 +16,5 @@ const setBuildScript = (buildGradle) => {
     newBuildGradle = newBuildGradle.replace(/dependencies\s?{/, newEntry);
     return newBuildGradle;
 };
-exports.default = withUpdateAppBuildGradle;
+export default withUpdateAppBuildGradle;
 //# sourceMappingURL=withUpdateAppBuildGradle.js.map

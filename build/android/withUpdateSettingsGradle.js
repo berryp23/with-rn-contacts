@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const config_plugins_1 = require("@expo/config-plugins");
+import { withSettingsGradle } from '@expo/config-plugins';
 const withUpdateSettingsGradle = (config) => {
-    return (0, config_plugins_1.withSettingsGradle)(config, (config) => {
+    return withSettingsGradle(config, (config) => {
         if (config.modResults.language === 'groovy') {
             config.modResults.contents = setSettingsGradle(config.modResults.contents);
         }
@@ -20,5 +18,5 @@ project(':react-native-contacts').projectDir = new File(rootProject.projectDir, 
 `;
     return newSettingsGradle;
 };
-exports.default = withUpdateSettingsGradle;
+export default withUpdateSettingsGradle;
 //# sourceMappingURL=withUpdateSettingsGradle.js.map
