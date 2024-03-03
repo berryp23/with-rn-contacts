@@ -1,6 +1,8 @@
-import { withMainApplication } from '@expo/config-plugins';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const config_plugins_1 = require("@expo/config-plugins");
 const withUpdateMainApplication = (config) => {
-    return withMainApplication(config, (config) => {
+    return (0, config_plugins_1.withMainApplication)(config, (config) => {
         config.modResults.contents = setMainApplication(config.modResults.contents);
         return config;
     });
@@ -13,5 +15,5 @@ import com.rt2zz.reactnativecontacts.ReactNativeContacts`);
     return PackageList(this).packages`);
     return newMainApplication;
 };
-export default withUpdateMainApplication;
+exports.default = withUpdateMainApplication;
 //# sourceMappingURL=withUpdateMainApplication.js.map
