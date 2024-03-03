@@ -1,6 +1,6 @@
 {
   "name": "with-rn-contacts",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Expo module for react-native-contacts library",
   "main": "app.plugin.js",
   "author": "berrypark1223@gmail.com",
