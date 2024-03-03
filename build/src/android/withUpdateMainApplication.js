@@ -16,3 +16,4 @@ import com.rt2zz.reactnativecontacts.ReactNativeContacts`);
     return newMainApplication;
 };
 exports.default = withUpdateMainApplication;
+//# sourceMappingURL=withUpdateMainApplication.js.map

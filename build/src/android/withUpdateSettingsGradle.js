@@ -21,3 +21,4 @@ project(':react-native-contacts').projectDir = new File(rootProject.projectDir, 
     return newSettingsGradle;
 };
 exports.default = withUpdateSettingsGradle;
+//# sourceMappingURL=withUpdateSettingsGradle.js.map
